@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/homepage.css"/>
+    <script defer src="js/website.js"></script> 
+
+    <script type="module">
+        import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+        new fairyDustCursor();
+    </script>
+    
+    <title>Kamille's Fragrance Collection | The Atchive </title>
+    </title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="index.html">The Archive</a></li>
+                <li><a href="library.html">The Library</a></li>
+                <li><a href="Atelier.html">The Atelier</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="text-container">
+            <h1>My favorite fragrances</h1>
+            <h2>Pick a scent</h2>
+        </div>
+
+        <div class="shelf-container">
+            <img src="images/shelf 1.png" alt="Outline of a medicine cabinet." class="shelf-image">
+            <div class="grid-container">
+                <button class="grid-button" data-popup="popup1">
+                    <img src="images/odette1.png" alt="Odette by Guamina perfume.">
+                </button>
+                <button class="grid-button" data-popup="popup2">
+                    <img src="images/Poets.png" alt="Poets of Berline perfume.">
+                </button>
+                <button class="grid-button" data-popup="popup3">
+                    <img src="images/whiff2.png" alt="Whiff if Wafflecone perfume.">
+                </button>
+                <button class="grid-button" data-popup="popup4">
+                <img src="images/unkown-pleasures.png" alt="Unknown Pleasures perfume.">
+                <button class="grid-button" data-popup="popup5">
+                    <img src="images/bianco.png" alt="Bianco Latte perfume.">
+                </button>
+                <button class="grid-button" data-popup="popup6">
+                    <img src="images/intense-cafe.png" alt="Intense Cafe perfume.">
+                </button>
+            </div>
+        </div>
+    
+        <!-- Popup for Perfume 1 -->
+        <div id="popup1" class="ontop" onclick="hide('popup1')">
+            <div class="popup-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="hide('popup1')">✖</button>
+                <h3>Odette</h3>
+                <p>Graceful vulnerability, Living doll, Pastel blush walls (dusted in white and bronze paint), Wistfulness for another universe outside of time and space, 7 Up & half a grapefruit as a snack, A first encounter with a sparkly stranger</p>
+                        <img src="images/rose.jpg" alt="Rose." class="note-item">
+                        <img src="images/grapefruit.jpg" alt="Grapefruit" class="note-item">
+                        <img src="images/musk.jpg" alt="Musk." class="note-item">
+                        <img src="images/rhubarb.jpg" alt="Rhubarb." class="note-item">
+                        <img src="images/sparkling-water.jpg" alt="Sparkling water." class="note-item">
+                        <img src="images/orris.jpg" alt="Orris." class="note-item">
+                        <img src="images/tonka.jpg" alt="Tonka bean." class="note-item">
+                    </div>
+            </div>
+        </div>
+
+        <!-- Popup for Perfume 2 -->
+        <div id="popup2" class="ontop" onclick="hide('popup2')">
+            <div class="popup-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="hide('popup2')">✖</button>
+                <h3>Poets of Berlin</h3>
+                <p>Berlin, a city that is alive with the same kinetic, magnetic energy that attracted David Bowie for a few formative, recuperative and prolific years in the Seventies. Perpetual creative movement embodied in a bold collision of blueberry, lemon, bamboo, green wild orris and Haitian vetiver. </p>
+                    <img src="images/blueberry.jpg" alt="Blueberry." class="note-item">
+                    <img src="images/lemon.jpg" alt="Lemon." class="note-item">
+                    <img src="images/bamboo.jpg" alt="Bamboo." class="note-item">
+                    <img src="images/orris.jpg" alt="Orris." class="note-item">
+                    <img src="images/vanilla.jpg" alt="Vanilla." class="note-item">
+                    <img src="images/sandalwood.jpg" alt="Sandalwood." class="note-item">
+                    <img src="images/vetiver.jpg" alt="Vetiver." class="note-item">
+            </div>
+        </div>
+
+        <!-- Popup for Perfume 3 -->
+        <div id="popup3" class="ontop" onclick="hide('popup3')">
+            <div class="popup-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="hide('popup3')">✖</button>
+                <h3>Whiff of Wafflecone</h3>
+                <p>Made in collaboration with Salt and Straw ice cream. Notes vanilla, salted caramel, Saigon cinnamon, heavy cream, sandalwood, orgeat, scoop shop.</p>
+                    <img src="images/caramel.jpg" alt="Caramel." class="note-item">
+                    <img src="images/cinnamon.jpg" alt="Cinnamon." class="note-item">
+                    <img src="images/vanilla.jpg" alt="Vanilla." class="note-item">
+                    <img src="images/whipped-cream.jpg" alt="Whipped cream." class="note-item">
+                    <img src="images/sandalwood.jpg" alt="Sandalwood." class="note-item">
+            </div>
+        </div>
+
+        <!-- Popup for Perfume 4 -->
+        <div id="popup4" class="ontop" onclick="hide('popup4')">
+            <div class="popup-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="hide('popup4')">✖</button>
+                <h3>Unknown Pleasures</h3>
+                <p> The legendary indie best seller Unknown Pleasures is a perfect gourmand perfume that reflects perfumer John Pegg's memories of walking down the chilly streets of London, 
+                    listening to Joy Division, while sipping on a warm cup of London Fog. <br> The fragrance opens up with the smooth flavor of Earl Grey tea with honey and a zing of lemon. 
+                    The drydown softens into cozy vanilla, dreamy tonka bean and the signature waffle cone base.<br> </p>
+                    <img src="images/vanilla.jpg" alt="Vanilla." class="note-item">
+                    <img src="images/bergamont.jpg" alt="Bergamont." class="note-item">
+                    <img src="images/tea.jpg" alt="Tea." class="note-item">
+                    <img src="images/tonka.jpg" alt="Tonka bean." class="note-item">
+                    <img src="images/lemon.jpg" alt="Lemon." class="note-item">
+                    <img src="images/caramel.jpg" alt="Caramel." class="note-item">
+            </div>
+        </div>
+
+         <!-- Popup for Perfume 5 -->
+         <div id="popup5" class="ontop" onclick="hide('popup5')">
+            <div class="popup-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="hide('popup5')">✖</button>
+                <h3>Bianco Latte</h3>
+                <p>The sheer bliss of a warm embrace. The abiding memory of a bite of sweetness shared between loved ones. The deep satisfaction of complete comfort. This is Bianco Latte, an unforgettable cloud of gourmand perfection- mouthwatering ribbons of caramel swirled with syrupy honey and indulgently creamy vanilla, but given buoyant sensuality with a pillowy cloud of divine white musk. Playful yet seductive, Bianco Latte is a gourmand for those who indulge all sides of their sweet tooth.</p>
+                    <img src="images/vanilla.jpg" alt="Vanilla." class="note-item">
+                    <img src="images/bergamont.jpg" alt="Bergamont." class="note-item">
+                    <img src="images/tea.jpg" alt="Tea." class="note-item">
+                    <img src="images/tonka.jpg" alt="Tonka bean." class="note-item">
+                    <img src="images/lemon.jpg" alt="Lemon." class="note-item">
+                    <img src="images/caramel.jpg" alt="Caramel." class="note-item">
+            </div>
+        </div>
+
+        <!-- Popup for Perfume 6 -->
+         <div id="popup6" class="ontop" onclick="hide('popup6')">
+            <div class="popup-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="hide('popup6')">✖</button>
+                <h3>Intense Cafe</h3>
+                <p> Intense Cafe is a love affair between rose and coffee. Caressing your skin with delectable notes of sugared vanilla, amber, and musk, this intoxicating blend lingers in the air..</p>
+                    <img src="images/vanilla.jpg" alt="Vanilla." class="note-item">
+                    <img src="images/rose.jpg" alt="Rose." class="note-item">
+                    <img src="images/musk.jpg" alt="Musk." class="note-item">
+                    <img src="images/coffee.jpg" alt="Coffee." class="note-item">
+                    <img src="images/amber.jpg" alt="Amber." class="note-item">
+            </div>
+        </div>
+
+    </main>   
+
+</body>
+</html>
